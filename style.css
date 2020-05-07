@@ -1,0 +1,186 @@
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin :0;
+}
+
+/*
+header
+*/
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/banner.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    
+}
+nav{
+    text-align: center;
+}
+
+/*
+sections
+*/
+
+.section-cities,.section-about{
+    background-color: #eeeeee;
+    color: #05131c;
+}
+.section-subscribe,.section-buy{
+    background-color: white;
+    color: #05131c;
+}
+
+/*
+reusable code
+*/
+ h2{
+    font-size: 200%;
+    text-align: center;
+    padding: 69px;
+    padding-bottom: 40px;
+    
+}
+ h2:after{
+    display: block;
+    height: 2px;
+    background-color: #888;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.textwidth{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 120%;
+}
+.text-icon {
+    text-align: center;
+    padding:50px;
+    
+}
+.text-icon i{
+    font-size: 350%; 
+    margin-bottom: 25px;   
+}
+
+.gifs{
+    width: 150px;
+}
+.col-element{
+    display: flex;
+    align-items: center;
+    padding-bottom:25px ;
+}
+.p-element{
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+cities in section b
+*/
+.ro{
+    background-color: black;
+    
+}   
+.img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+.img-wrap:hover .title-middle{
+    visibility: visible;
+    opacity: 1;
+}
+.title-middle{
+   
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 13;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+}
+.city{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+    transition: transform .3s, box-shadow .3s;
+    opacity: 1;
+    
+}
+.img-wrap:hover .city{
+    box-shadow: 5px 10px;
+    transform: scale(1); 
+    opacity: .7;
+}
+
+
+/*
+form
+*/
+.form-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.form-text{
+    font-size: 140%;
+    text-align: center;
+}
+
+/*
+animation
+*/
+.js--wp-buy,
+.js--wp-city,
+.js--wp-form
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-buy.animated,
+.js--wp-city.animated,
+.js--wp-form.animated
+{
+    opacity: 1;
+}
+
+/*
+footer
+*/
+footer{
+    background-color: #00838f;
+    color: white;
+    text-align: center;
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.2);
+    
+}
+footer a:link,footer a:visited{
+    color: white;
+}
+footer a:hover,footer a:active{
+    color: white;
+}
